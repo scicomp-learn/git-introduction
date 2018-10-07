@@ -24,3 +24,11 @@ In a nutshell, versioning is a technique for managing large/small projects.
 - troubleshooting
 - adding features
 @ulend
+
+---
+
+@snap[north]
+<h2>What is Git?</h2>
+@snapend
+
+__Coming Soon..__

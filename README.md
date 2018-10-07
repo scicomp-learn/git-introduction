@@ -51,3 +51,5 @@ git init
 - Check it by using: `git status`.
 - Then, open your favorite editor and open the `demo-project` folder.
 - And.. tweak them! change the code, it's up to you, but make sure you still can run it, though.
+
+> Still working on this..
