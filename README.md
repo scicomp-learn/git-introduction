@@ -5,7 +5,8 @@ project you can try, surely, on your own.
 
 ## Slides
 
-I suggest you check out the slides __Versioning with Git__ [here](PITCHME.md).
+I suggest you check out the slides __Versioning with Git__ [here](PITCHME.md)
+or you can access it directly using this [GitPitch](https://gitpitch.com/sk-datascience/git-introduction).
 The slide covers the theoritical background about Git. In fact, it's the only
 reading in this repo.
 
