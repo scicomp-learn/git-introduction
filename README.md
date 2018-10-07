@@ -22,7 +22,7 @@ Git installed in your machine. Here I have the links for you below:
 sudo apt-get install git
 ```
 
-To make sure you have installed Git, try this 
+To make sure you have installed Git, try this
 
 ```bash
 git --version
