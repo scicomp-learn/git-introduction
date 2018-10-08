@@ -31,4 +31,96 @@ In a nutshell, versioning is a technique for managing large/small projects.
 <h2>What is Git?</h2>
 @snapend
 
-__Coming Soon..__
+@fa[git] is a tool to manage your projects that provides automatic way to track changes in software projects, giving creators to:
+@ul
+
+- view previous versions of files and directories
+- develop speculative features without disrupting the main development
+- back up project and its history securely
+- collaborate easily and conveniently with others
+
+@ulend
+
++++
+
+@snap[north-east]
+<h3>Git Installation</h3>
+@snapend
+
+Follow instruction for installation in [README](https://github.com/sk-datascience/git-introduction/blob/master/README.md).
+
++++
+
+### Git Configuration
+
+```bash
+$ git config user.name "Your Name"
+$ git config.user.email "your.email@example.com"
+$ git config
+$ git help
+```
+
+@[1-2](Configure your name and email)
+@[3](Show all git configuration option command)
+@[4](Show common git commands)
+
+---
+
+@snap[north]
+
+<h2>Demo Project</h2>
+
+Outline:
+
+@ol
+- @size[0.8em](Initiate your git repository)
+- @size[0.8em](Just code!)
+- @size[0.8em](Saving changes)
+- @size[0.8em](Status and log)
+- @size[0.8em](Undoing changes)
+- @size[0.8em](Collaborating with: `remote`, `fetch`, `push`, `pull`)
+- @size[0.8em](Branching)
+
+@olend
+
+---
+
+@snap[north-east]
+<h2>Initiate git _repository_</h2>
+@snapend
+
+> Repository is just a fancy term for a Directory. A virtual storage for saving versions of your code, which can be accessed when needed
+
++++
+
+Initiate git repo by:
+
+```bash
+$ mkdir MyProj && cd MyProj
+$ git init
+Initialized empty Git repository in Users/name/MyProj/.git/
+```
+
+@[1](Create project directory)
+@[2](Initate as Git Repository)
+@[3](Yes you're doing good!)
+
++++
+
+### Or
+
+@quote[You can use the `demo-project` instead for convenience]
+
++++
+
+### Then
+
+code with your favorite programming language
+
+_or_
+
+play around with 3 files in the `demo-project`
+
+---
+
+## Coming Soon..
