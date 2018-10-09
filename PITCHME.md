@@ -10,6 +10,7 @@
 @quote[If your code runs, don't touch it.](Anonym)
 
 +++
+@transition[zoom-in zoom-out]
 
 @snap[north-west]
 <h3> What does it mean by _versioning_? </h3>
@@ -26,6 +27,7 @@ In a nutshell, versioning is a technique for managing large/small projects.
 @ulend
 
 ---
+@transition[fade-in fade-out]
 
 @snap[north]
 <h2>What is Git?</h2>
@@ -42,6 +44,7 @@ In a nutshell, versioning is a technique for managing large/small projects.
 @ulend
 
 +++
+@transition[zoom-in zoom-out]
 
 @snap[north-east]
 <h3>Git Installation</h3>
@@ -50,6 +53,7 @@ In a nutshell, versioning is a technique for managing large/small projects.
 Follow instruction for installation in [README](https://github.com/sk-datascience/git-introduction/blob/master/README.md).
 
 +++
+@transition[zoom-in fade-out]
 
 ### Git Configuration
 
@@ -65,6 +69,7 @@ $ git help
 @[4](Show common git commands)
 
 ---
+@transition[fade-in fade-out]
 
 @snap[north]
 
@@ -84,6 +89,7 @@ Outline:
 @olend
 
 ---
+@transition[fade-in fade-out]
 
 @snap[north-east]
 <h2>Initiate git _repository_</h2>
@@ -92,6 +98,7 @@ Outline:
 > Repository is just a fancy term for a Directory. A virtual storage for saving versions of your code, which can be accessed when needed
 
 +++
+@transition[zoom-in zoom-out]
 
 Initiate git repo by:
 
@@ -106,12 +113,14 @@ Initialized empty Git repository in Users/name/MyProj/.git/
 @[3](Yes you're doing good!)
 
 +++
+@transition[zoom-in zoom-out]
 
 ### Or
 
 @quote[You can use the `demo-project` instead for convenience]
 
 +++
+@transition[zoom-in fade-out]
 
 ### Then
 
@@ -122,5 +131,35 @@ _or_
 play around with 3 files in the `demo-project`
 
 ---
+@transition[fade-in fade-out]
 
-## Coming Soon..
+## Git States
+
+![Git State](template/images/git-states.png)
+
++++
+@transition[zoom-in zoom-out]
+
+### 3 States
+
+1. Working directory
+2. Staging area
+3. (.git) Repository
+
++++
+@transition[zoom-in zoom-out]
+
+## Working Directory
+
+May consist of __untracked__ files and also __unstaged__ files. It's just your
+"local working directory"
+
++++
+@transition[zoom-in zoom-out]
+
+@quote[ To be able to track changes, you need to specify what files need to betracked in a `.git` repo](author)
+
+---
+@transition[fade-in]
+
+## Coming Soon
