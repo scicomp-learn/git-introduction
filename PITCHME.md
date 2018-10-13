@@ -73,7 +73,7 @@ $ git help
 
 @snap[north]
 
-<h2>Demo Project</h2>
+<h2>Getting Started</h2>
 
 Outline:
 
@@ -103,9 +103,9 @@ Outline:
 Initiate git repo by:
 
 ```bash
-$ mkdir MyProj && cd MyProj
+$ mkdir YourProjectName && cd YourProjectName
 $ git init
-Initialized empty Git repository in Users/name/MyProj/.git/
+Initialized empty Git repository in Users/name/YourProjectName/.git/
 ```
 
 @[1](Create project directory)
@@ -122,7 +122,7 @@ Initialized empty Git repository in Users/name/MyProj/.git/
 +++
 @transition[zoom-in fade-out]
 
-### Then
+### Then, JUST CODE!
 
 code with your favorite programming language
 
@@ -149,7 +149,7 @@ play around with 3 files in the `demo-project`
 +++
 @transition[zoom-in zoom-out]
 
-## Working Directory
+### Working Directory
 
 May consist of __untracked__ files and also __unstaged__ files. It's just your
 "local working directory"
@@ -157,9 +157,130 @@ May consist of __untracked__ files and also __unstaged__ files. It's just your
 +++
 @transition[zoom-in zoom-out]
 
-@quote[ To be able to track changes, you need to specify what files need to betracked in a `.git` repo](author)
+@quote[ To be able to track changes, you need to specify what files need to be tracked in a `.git` repo](author)
+
++++
+@transition[zoom-in zoom-out]
+
+If you're just initiate a git repository, and type command `git status`, then you will get
+
+```git
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+
++++
+@transition[zoom-in zoom-out]
+
+### Meanings?
+
+@ol
+- You don't have any commits yet
+- You have nothing to commit (cause you haven't tracked any files)
+- "So, track one"
+@olend
 
 ---
-@transition[fade-in]
+@transition[fade-in fade-out]
 
-## Coming Soon
+## RECAP
+
+@ol
+- We have **initiate** our first git repository (with `git init`)
+- Make changes in the codes (demo-project or your own codes)
+- First attempts with `git status` (for?)
+- Understand the difference between local directory and git repository
+- **Next:** Staging, Saving changes, Status, and Log
+@olend
+
+---
+@transition[fade-in fade-out]
+
+## Staging
+
+Staging is a process of versioning in git where files are added to stage area
+(files are *staged*) and prepare them to be committed and save the changes in
+git repo
+
++++
+@transition[zoom-in zoom-out]
+
+### Important Terms
+
+**Untracked:** Changes are not tracked
+
+**Unstaged:** These aren't part of git repo
+
++++
+@transition[zoom-in zoom-out]
+
+### Notes
+
+@quote[Saving the changes of codes doesn't mean saving the version of the code](beware!)
+
++++
+@transition[zoom-in zoom-out]
+
+### Workflows
+
+![staging](template/images/sk-datascience_git-intro_staging.png)
+
++++
+@transition[zoom-in zoom-out]
+
+### Hands-On
+
+```bash
+$ git status
+$ git add FileName.whatever
+$ git status
+```
+
+@[1](Shows git state of the working directory)
+@[2](Add/stage/track files in staging area and prepare to be commited/saved)
+@[3](Shows git state after adding the files)
+
++++
+@transition[zoom-in fade-out]
+
+### Similar Comands
+
+```bash
+$ git add .
+```
+
+@[1](Add all files, literally everything in the directory, to staging area)
+
++++
+@transition[zoom-in zoom-out]
+
+```git
+...something else...
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   demo.py
+```
+
+@[1](other info)
+@[3-6](main information of your added/staged files)
+
+---
+@transition[fade-in fade-out]
+
+## Commit
+
+Coming Soon..
+
+---
+@transition[fade-in fade-out]
+
+## Reference
+
+[Udacity - Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+
+[Medium - Basic Tutorial Git](https://medium.com/ai-saturdays/basic-tutorials-part-2-ee778e5926cf)
