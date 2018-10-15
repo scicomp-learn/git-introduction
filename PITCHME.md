@@ -274,7 +274,45 @@ Changes to be committed:
 
 ## Commit
 
-Coming Soon..
+After adding files or current state of your project into staging area, to
+*save* your current *version* into git repository, use `commit`
+
++++
+@transition[zoom-in zoom-out]
+
+### Workflows
+
+![commit](template/images/skds-git_intro-commit.png)
+
++++
+@transition[zoom-in zoom-out]
+
+### How To Commit
+
+@ol
+
+- Use `git commit`
+- Add *commit message*
+- Save it
+- Done!
+
+@olend
+
++++
+@transition[zoom-in zoom-out]
+
+### Hands-On
+
+```bash
+$ git status
+$ git commit -m "your message must be informative & not too long like this message"
+```
+
+@[1](Make sure (your status!) you have staged your changes)
+@[2](Commit! type your commit message directly for convenience)
+
+<!-- TODO: -->
+<!-- Log, Undoing changes, collaborating -->
 
 ---
 @transition[fade-in fade-out]
