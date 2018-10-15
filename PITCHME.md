@@ -11,7 +11,7 @@
 
 ---
 
-![meme-versioning](templates/images/meme-versioning-1.png)
+![meme-versioning](template/images/meme-versioning-1.png)
 
 Always happen!
 
