@@ -212,7 +212,7 @@ git repo
 
 **Untracked:** Changes are not tracked
 
-**Unstaged:** These aren't part of git repo
+**Unstaged:** These files aren't part of git repo
 
 +++
 @transition[zoom-in zoom-out]
