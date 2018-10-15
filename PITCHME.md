@@ -9,6 +9,12 @@
 
 @quote[If your code runs, don't touch it.](Anonym)
 
+---
+
+![meme-versioning](templates/images/meme-versioning-1.png)
+
+Always happen!
+
 +++
 @transition[zoom-in zoom-out]
 
