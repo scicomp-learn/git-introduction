@@ -32,6 +32,32 @@ In a nutshell, versioning is a technique for managing large/small projects.
 - adding features
 @ulend
 
++++
+@transition[zoom-in zoom-out]
+
+@snap[north-west]
+<h3>Version control is everywhere</h3>
+@snapend
+
+Simple example
+
+@ul
+- `cmd+z` or `ctrl+z`
+- Google docs
+@ulend
+
++++
+@transition[zoom-in zoom-out]
+
+### Not Powerful Enough
+
+@ul
+- ability to label a change
+- ability to give a detailed explanation of why a change was made
+- ability to move between different versions of the same document
+- ability to undo change A, make edit B, then get back change A without affecting edit B
+@ulend
+
 ---
 @transition[fade-in fade-out]
 
@@ -126,15 +152,14 @@ Initialized empty Git repository in Users/name/YourProjectName/.git/
 @quote[You can use the `demo-project` instead for convenience]
 
 +++
-@transition[zoom-in fade-out]
+@transition[zoom-in zoom-out]
 
-### Then, JUST CODE!
+![Create project & inititate as git repository](template/gif/initiate.gif)
 
-code with your favorite programming language
++++
+@transition[zoom-in zoom-out]
 
-_or_
-
-play around with 3 files in the `demo-project`
+![git file - DON'T EDIT IT DIRECTLY!](template/images/git.png)
 
 ---
 @transition[fade-in fade-out]
@@ -196,7 +221,6 @@ nothing to commit (create/copy files and use "git add" to track)
 
 @ol
 - We have **initiate** our first git repository (with `git init`)
-- Make changes in the codes (demo-project or your own codes)
 - First attempts with `git status` (for?)
 - Understand the difference between local directory and git repository
 - **Next:** Staging, Saving changes, Status, and Log
@@ -319,6 +343,49 @@ $ git commit -m "your message must be informative & not too long like this messa
 
 <!-- TODO: -->
 <!-- Log, Undoing changes, collaborating -->
+
++++
+@transition[zoom-in zoom-out]
+
+![git commit](template/gif/commit.gif)
+
+---
+@transition[fade-in fade-out]
+
+## More on Changing Codes
+
+code/tweak with your favorite programming language
+
+_or_
+
+play around with 3 files in the `demo-project`
+
++++
+@transition[zoom-in zoom-out]
+
+### demo.py
+
+```python
+people = ['person1', 'person2', 'person3']
+for person in people:
+  print(person)
+```
+
+![1](initialize people list)
+![2-3](print every person in people list)
+
+@ul
+- Tweak it! try adding new element in `people` list
+@ulend
+
++++
+@transition[zoom-in zoom-out]
+
+Once again:
+
+1. get your git status
+2. add changes to staging area
+3. commit your changes
 
 ---
 @transition[fade-in fade-out]
