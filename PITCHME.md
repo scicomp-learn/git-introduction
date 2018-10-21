@@ -371,8 +371,8 @@ for person in people:
   print(person)
 ```
 
-![1](initialize people list)
-![2-3](print every person in people list)
+@[1](initialize people list)
+@[2-3](print every person in people list)
 
 @ul
 - Tweak it! try adding new element in `people` list
