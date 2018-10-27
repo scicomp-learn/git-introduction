@@ -45,15 +45,10 @@ GitHub is a service that allows you to host Git Repositories online, accessible,
 ---
 @transition[fade-in fade-out]
 
-Create a directory
+## How Git Works
 
-```bash
-mkdir ProjectName
-cd ProjectName
-```
-
-@[1](Make a directory)
-@[2](Change directory to `ProjectName`)
++++?image=template/images/git-flow.png
+@transition[zoom-in zoom-out]
 
 ---
 @transition[fade-in fade-out]
@@ -85,14 +80,6 @@ mkdir [directory-name]
 ### Illustration
 
 ![common terminal commands](template/gif/terminal.gif)
-
----
-@transition[fade-in fade-out]
-
-## How Git Works
-
-+++?image=template/images/git-flow.png
-@transition[zoom-in zoom-out]
 
 ---
 @transition[fade-in fade-out]
