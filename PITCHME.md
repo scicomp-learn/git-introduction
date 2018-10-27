@@ -58,7 +58,7 @@ GitHub is a service that allows you to host Git Repositories online, accessible,
 +++
 @transition[zoom-in zoom-out]
 
-@snap[west]
+@snap[north-west]
 <h3>Terminal Commands</h3>
 @snapend
 
