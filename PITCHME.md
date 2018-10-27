@@ -17,13 +17,9 @@ In a nutshell, versioning is a technique for mananing large/small projects by __
 +++
 @transition[zoom-in zoom-out]
 
-@ul
-
 - [Git for Windows](https://git-scm.com/download/mac)
 - [Git for Mac](https://git-scm.com/download/mac)
 - [Git for Linux](https://git-scm.com/download/linux)
-
-@ulend
 
 +++
 @transition[zoom-in zoom-out]
@@ -42,7 +38,7 @@ In a nutshell, versioning is a technique for mananing large/small projects by __
 ---
 @transition[fade-in fade-out]
 
-## GitHub
+## What is GitHub
 
 GitHub is a service that allows you to host Git Repositories online, accessible, and to collaborate with others on them.
 
@@ -63,6 +59,40 @@ cd ProjectName
 @transition[fade-in fade-out]
 
 ## Get wet with Git
+
++++
+@transition[zoom-in zoom-out]
+
+@snap[west]
+<h3>Terminal Commands</h3>
+@snapend
+
+```bash
+pwd
+ls
+cd [directory-name]
+mkdir [directory-name]
+```
+
+@[1](__p__rint __w__orking __d__irectory)
+@[2](__list__ files in the current directory)
+@[3](__c__hanges/moves to the given __d__irectory name/path)
+@[4](__m__akes new __d__irectory)
+
++++
+@transition[zoom-in zoom-out]
+
+### Illustration
+
+![common terminal commands](template/gif/terminal.gif)
+
+---
+@transition[fade-in fade-out]
+
+## How Git Works
+
++++?image=template/images/git-flow.png
+@transition[zoom-in zoom-out]
 
 ---
 @transition[fade-in fade-out]
