@@ -81,6 +81,20 @@ mkdir [directory-name]
 
 ![common terminal commands](template/gif/terminal.gif)
 
++++
+@transition[zoom-in zoom-out]
+
+### Demo Project
+
+@ol
+
+- Create project directory
+- Initiate `git` repository
+- Code → Save → Staged → Commit
+- Edit → Save → Staged → Commit
+
+@olend
+
 ---
 @transition[fade-in fade-out]
 
