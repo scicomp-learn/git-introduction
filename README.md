@@ -4,7 +4,7 @@ Pengantar Kontrol Sistem Git
 
 ## Slides
 
-Untuk _slide summary_, bisa diakses di [gitpitch-simplify](https://gitpitch.com/sk-datascience/git-introduction/simplify). Jika ingin slide yang lebih detail, dapat diakses melalui [gitpitch-master](https://gitpitch.com/sk-datascience/git-introduction/master).
+Untuk slide dapat diakses melalui [gitpitch-master](https://gitpitch.com/sk-datascience/git-introduction/master).
 
 ## Requirements
 
