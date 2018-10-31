@@ -1,201 +1,172 @@
-# Versioning with Git
+# Git Introduction
 
 ---
 @transition[fade-in fade-out]
 
-@snap[north span-30]
-<h2> Versioning your code </h2>
-@snapend
+## What is Git?
 
-@quote[If your code runs, don't touch it.](Anonym)
-
----
-
-![meme-versioning](template/images/meme-versioning-1.png)
-
-Always happen!
+A Version Control System (VCS) provides an automatic way to track changes in software projects.
 
 +++
 @transition[zoom-in zoom-out]
 
-@snap[north-west]
-<h3> What does it mean by _versioning_? </h3>
-@snapend
+### VCS or Versioning
 
-In a nutshell, versioning is a technique for managing large/small projects.
-
-@fa[code-fork]
-
-@ul
-- track and documenting changes
-- troubleshooting
-- adding features
-@ulend
+In a nutshell, versioning is a technique for mananing large/small projects by __track and documenting changes__, __troubleshooting__, and __adding features__.
 
 +++
 @transition[zoom-in zoom-out]
 
-@snap[north-west]
-<h3>Version control is everywhere</h3>
-@snapend
-
-Simple example
-
-@ul
-- `cmd+z` or `ctrl+z`
-- Google docs
-@ulend
+- [Git for Windows](https://git-scm.com/download/mac)
+- [Git for Mac](https://git-scm.com/download/mac)
+- [Git for Linux](https://git-scm.com/download/linux)
 
 +++
 @transition[zoom-in zoom-out]
 
-### Not Powerful Enough
+### Benefit of Git
 
 @ul
-- ability to label a change
-- ability to give a detailed explanation of why a change was made
-- ability to move between different versions of the same document
-- ability to undo change A, make edit B, then get back change A without affecting edit B
+
+- Giving creator to view previous versions of files and directories
+- Develop speculative features without disrupting the main development
+- Securely backup the project and its history
+- Collaborate easily and conveniently with others
+
 @ulend
 
 ---
 @transition[fade-in fade-out]
 
-@snap[north]
-<h2>What is Git?</h2>
-@snapend
+## What is GitHub
 
-@fa[git] is a tool to manage your projects that provides automatic way to track changes in software projects, giving creators to:
-@ul
+GitHub is a service that allows you to host Git Repositories online, accessible, and to collaborate with others on them.
 
-- view previous versions of files and directories
-- develop speculative features without disrupting the main development
-- back up project and its history securely
-- collaborate easily and conveniently with others
+---
+@transition[fade-in fade-out]
 
-@ulend
+## How Git Works
+
++++?image=template/images/git-flow.png
+@transition[zoom-in zoom-out]
+
+---
+@transition[fade-in fade-out]
+
+## Get wet with Git
 
 +++
 @transition[zoom-in zoom-out]
 
-@snap[north-east]
-<h3>Git Installation</h3>
+@snap[north-west]
+<h3>Terminal Commands</h3>
 @snapend
-
-Follow instruction for installation in [README](https://github.com/sk-datascience/git-introduction/blob/master/README.md).
-
-+++
-@transition[zoom-in fade-out]
-
-### Git Configuration
 
 ```bash
-$ git config user.name "Your Name"
-$ git config.user.email "your.email@example.com"
-$ git config
-$ git help
+pwd
+ls
+cd [directory-name]
+mkdir [directory-name]
 ```
 
-@[1-2](Configure your name and email)
-@[3](Show all git configuration option command)
-@[4](Show common git commands)
+@[1](__p__rint __w__orking __d__irectory)
+@[2](__list__ files in the current directory)
+@[3](__c__hanges/moves to the given __d__irectory name/path)
+@[4](__m__akes new __d__irectory)
 
----
-@transition[fade-in fade-out]
++++
+@transition[zoom-in zoom-out]
 
-@snap[north]
+### Illustration
 
-<h2>Getting Started</h2>
+![common terminal commands](template/gif/terminal.gif)
 
-Outline:
++++
+@transition[zoom-in zoom-out]
+
+### Demo Project
 
 @ol
-- @size[0.8em](Initiate your git repository)
-- @size[0.8em](Just code!)
-- @size[0.8em](Saving changes)
-- @size[0.8em](Status and log)
-- @size[0.8em](Undoing changes)
-- @size[0.8em](Collaborating with: `remote`, `fetch`, `push`, `pull`)
-- @size[0.8em](Branching)
+
+- Create project directory
+- Initiate `git` repository
+- Code → Save → Staged → Commit
+- Edit → Save → Staged → Commit
 
 @olend
 
 ---
 @transition[fade-in fade-out]
 
-@snap[north-east]
-<h2>Initiate git _repository_</h2>
-@snapend
-
-> Repository is just a fancy term for a Directory. A virtual storage for saving versions of your code, which can be accessed when needed
-
-+++
-@transition[zoom-in zoom-out]
-
-Initiate git repo by:
+## Create Project Directory
 
 ```bash
-$ mkdir YourProjectName && cd YourProjectName
-$ git init
-Initialized empty Git repository in Users/name/YourProjectName/.git/
+mkdir ProjectName
+cd ProjectName
 ```
 
 @[1](Create project directory)
-@[2](Initate as Git Repository)
-@[3](Yes you're doing good!)
-
-+++
-@transition[zoom-in zoom-out]
-
-### Or
-
-@quote[You can use the `demo-project` instead for convenience]
-
-+++
-@transition[zoom-in zoom-out]
-
-![Create project & inititate as git repository](template/gif/initiate.gif)
-
-+++
-@transition[zoom-in zoom-out]
-
-![git file - DON'T EDIT IT DIRECTLY!](template/images/git.png)
+@[2](Change directory to it)
 
 ---
 @transition[fade-in fade-out]
 
-## Git States
+## Initate `git` repo
 
-![Git State](template/images/git-states.png)
+```bash
+git init
+git status
+```
 
-+++
-@transition[zoom-in zoom-out]
-
-### 3 States
-
-1. Working directory
-2. Staging area
-3. (.git) Repository
+@[1](Initiate git repo)
+@[2](state info of your repo)
 
 +++
 @transition[zoom-in zoom-out]
 
-### Working Directory
+### Git Clone
 
-May consist of __untracked__ files and also __unstaged__ files. It's just your
-"local working directory"
+```bash
+git clone https://github.com/sk-datascience/demo-project.git
+git clone https://github.com/sk-datascience/demo-project.git [new-directory-name]
+```
+
+@[1](clone repo from github/bitbucket/gitlab)
+@[2](clone repo and give new directory name - optional)
 
 +++
 @transition[zoom-in zoom-out]
 
-@quote[ To be able to track changes, you need to specify what files need to be tracked in a `.git` repo](author)
+### Summary - git init
+
+- `git init` create a new, empty repository in the current directory
+- It creates hidden `.git` directory, the brain/storage center for the repo
+- Holds all configuration files and all of the __commits__
 
 +++
 @transition[zoom-in zoom-out]
 
-If you're just initiate a git repository, and type command `git status`, then you will get
+### Summary - git clone
 
-```git
+- Create identical copy of existing repo
+- Create new directory with the same name as the cloned repo (by default)
+- Ease of collaboration
+
+---
+@transition[fade-in fade-out]
+
+## Repo's Status
+
+The purpose is to tell us what Git is thinking and the state of our repo as Git
+sees it.
+
++++
+@transition[zoom-in zoom-out]
+
+### git status
+
+```bash
+$ git status
 On branch master
 
 No commits yet
@@ -203,195 +174,199 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
+@[1](check status)
+@[2-5](repo's initial status)
+
 +++
 @transition[zoom-in zoom-out]
 
-### Meanings?
+### Summary - git status
 
-@ol
-- You don't have any commits yet
-- You have nothing to commit (cause you haven't tracked any files)
-- "So, track one"
-@olend
+- Display current status of the repository
+- Will be used __all the time__
+- Tell us about new files that haven't been tracked by git, yet
+- Files git __is__ tracking that have been modified
+- Others
 
 ---
 @transition[fade-in fade-out]
 
-## RECAP
+## Code with your language
 
-@ol
-- We have **initiate** our first git repository (with `git init`)
-- First attempts with `git status` (for?)
-- Understand the difference between local directory and git repository
-- **Next:** Staging, Saving changes, Status, and Log
-@olend
-
----
-@transition[fade-in fade-out]
-
-## Staging
-
-Staging is a process of versioning in git where files are added to stage area
-(files are *staged*) and prepare them to be committed and save the changes in
-git repo
+- Create a file with particular format
+- Code! Save it!
 
 +++
 @transition[zoom-in zoom-out]
 
-### Important Terms
-
-**Untracked:** Changes are not tracked
-
-**Unstaged:** These files aren't part of git repo
-
-+++
-@transition[zoom-in zoom-out]
-
-### Notes
-
-@quote[Saving the changes of codes doesn't mean saving the version of the code](beware!)
-
-+++
-@transition[zoom-in zoom-out]
-
-### Workflows
-
-![staging](template/images/sk-datascience_git-intro_staging.png)
-
-+++
-@transition[zoom-in zoom-out]
-
-### Hands-On
-
-```bash
-$ git status
-$ git add FileName.whatever
-$ git status
-```
-
-@[1](Shows git state of the working directory)
-@[2](Add/stage/track files in staging area and prepare to be commited/saved)
-@[3](Shows git state after adding the files)
-
-+++
-@transition[zoom-in fade-out]
-
-### Similar Comands
-
-```bash
-$ git add .
-```
-
-@[1](Add all files, literally everything in the directory, to staging area)
-
-+++
-@transition[zoom-in zoom-out]
-
-```git
-...something else...
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-        new file:   demo.py
-```
-
-@[1](other info)
-@[3-6](main information of your added/staged files)
-
----
-@transition[fade-in fade-out]
-
-## Commit
-
-After adding files or current state of your project into staging area, to
-*save* your current *version* into git repository, use `commit`
-
-+++
-@transition[zoom-in zoom-out]
-
-### Workflows
-
-![commit](template/images/skds-git_intro-commit.png)
-
-+++
-@transition[zoom-in zoom-out]
-
-### How To Commit
-
-@ol
-
-- Use `git commit`
-- Add *commit message*
-- Save it
-- Done!
-
-@olend
-
-+++
-@transition[zoom-in zoom-out]
-
-### Hands-On
-
-```bash
-$ git status
-$ git commit -m "your message must be informative & not too long like this message"
-```
-
-@[1](Make sure (your status!) you have staged your changes)
-@[2](Commit! type your commit message directly for convenience)
-
-<!-- TODO: -->
-<!-- Log, Undoing changes, collaborating -->
-
-+++
-@transition[zoom-in zoom-out]
-
-![git commit](template/gif/commit.gif)
-
----
-@transition[fade-in fade-out]
-
-## More on Changing Codes
-
-code/tweak with your favorite programming language
-
-_or_
-
-play around with 3 files in the `demo-project`
-
-+++
-@transition[zoom-in zoom-out]
-
-### demo.py
+### Example `hello.py`
 
 ```python
-people = ['person1', 'person2', 'person3']
-for person in people:
-  print(person)
+name = "Sains Komputasi"
+print("Hello, ", name)
 ```
 
-@[1](initialize people list)
-@[2-3](print every person in people list)
+---
+@transition[fade-in fade-out]
+
+## How Git Works
+
+![How git works](template/images/how-git-works.png)
+
+---
+@transition[fade-in fade-out]
+
+## Git Add
 
 @ul
-- Tweak it! try adding new element in `people` list
+
+- For Git to track a file, it needs to be committed to the repo
+- Before commit file(s), they need to be __staged__
+- `git add` will move files from _working directory_ to _staging index/area_
+
+@ulend
+
++++?image=template/gif/staging.gif
+
+Note:
+
+Yang sudah dilakukan:
+
+- Buat direktori dan repo
+- Code and save!
+- staging sama saja dengan fase persiapan sebelum state file disimpan
+- memindahkan files ke staging area/index dengan git add
+
++++
+@transition[zoom-in zoom-out]
+
+### Summary - git add
+
+- `$ git add <file1> <file2> … <fileN>`
+- `git add` is used to move files from Working Directory to Staging Index
+- Alternative usage to stage all files using `git add .`
+- Don't forget to use `git status` to check repo's status
+
+---
+@transition[fade-in fade-out]
+
+## Git Commit
+
+@quote[First, before committing, config your code editor in git. This is confusing!!]
+
++++
+@transition[zoom-in zoom-out]
+
+### Committing
+
+```bash
+git commit -m "commit message"
+```
+
+Note:
+
+Alternatif lain yang memudahkan jika editor sulit untuk diintegrasikan dengan
+git, `-m` mengizinkan kita untuk menuliskan pesan commit secara langsung tanpa
+membuka editor
+
++++
+@transition[zoom-in zoom-out]
+
+### What to Include in A Commit
+
+Each commit has a single focus: __Record a "single-unit" change__
+
+@ul
+
+- A little bit subjective
+- But, it should make a change to just __one aspect of the project__
+- Conversely, a commit shouldn't include unrelated changes
+
 @ulend
 
 +++
 @transition[zoom-in zoom-out]
 
-Once again:
+@snap[north-west]
+<h3 >A Commit Message should..</h3>
+@snapend
 
-1. get your git status
-2. add changes to staging area
-3. commit your changes
+@ul
+
+- keep the message short (less than 60-ish characters)
+- explain __what__ the commit does (no __how__ or __why__!)
+
+@ulend
+
++++
+@transition[zoom-in zoom-out]
+
+@snap[north-west]
+<h3 >A Commit Message should not..</h3>
+@snapend
+
+@ul
+
+- explain __why__ changes are made
+- explain __how__ changes are made
+- use the word __and__
+
+@ulend
+
+Note:
+
+- how changes are made is what `git log -p` for
+- word and means probably the commit can be broken into several commit
+
++++
+@transition[zoom-in zoom-out]
+
+### Summary - Git Commit
+
+- takes files from staging index and save them into git repo
+- You can use `-m` to include commit message directly (if you know what you're doing)
+- Keep commit message short but still easy to understand  
+- __Be consistent__ in how we write commit message
+
+Note:
+
+- Short mention `git diff`
 
 ---
 @transition[fade-in fade-out]
 
-## Reference
+## Review Repo's History
 
-[Udacity - Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+---
+@transition[fade-in fade-out]
 
-[Medium - Basic Tutorial Git](https://medium.com/ai-saturdays/basic-tutorials-part-2-ee778e5926cf)
+## Undoing Changes
+
+---
+@transition[fade-in fade-out]
+
+## Tagging, Branching, Merging
+
+---
+@transition[fade-in fade-out]
+
+## GitHub
+
+---?image=template/images/how-github-works.png
+@transition[fade-in fade-out]
+
+---
+@transition[fade-in fade-out]
+
+## Demo GitHub
+
+1. Create GitHub Account
+2. Fork, Git Clone, Git Pull, Git Push
+3. GitHub Showcase
+
+[Education GitHub](https://education.github.com)
+
+---
+@transition[fade-in fade-out]
+
+## Thank You
