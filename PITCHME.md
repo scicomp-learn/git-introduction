@@ -28,6 +28,20 @@ A Version Control System (VCS) provides an automatic way to track changes in sof
 +++
 @transition[zoom-in zoom-out]
 
+### Importance!
+
+For windows user, you can choose either:
+
+@ol
+
+- Use the default git-bash, or
+- Download this amazing terminal, __hyper__, here: [hyper.is](https://releases.hyper.is/download/win)
+
+@olend
+
++++
+@transition[zoom-in zoom-out]
+
 ### Benefit of Git
 
 @ul
