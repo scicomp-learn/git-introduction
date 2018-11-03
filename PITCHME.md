@@ -3,19 +3,21 @@
 ---
 @transition[fade-in fade-out]
 
-## What is Git?
+## VCS or Versioning
+
+In a nutshell, versioning is a technique for mananing large/small projects by __track and documenting changes__, __troubleshooting__, and __adding features__.
+
++++
+@transition[zoom-in zoom-out]
+
+### What is Git?
 
 A Version Control System (VCS) provides an automatic way to track changes in software projects.
 
 +++
 @transition[zoom-in zoom-out]
 
-### VCS or Versioning
-
-In a nutshell, versioning is a technique for mananing large/small projects by __track and documenting changes__, __troubleshooting__, and __adding features__.
-
-+++
-@transition[zoom-in zoom-out]
+### Download Git-Bash
 
 - [Git for Windows](https://git-scm.com/download/win)
 - [Git for Mac](https://git-scm.com/download/mac)
