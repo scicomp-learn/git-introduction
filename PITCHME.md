@@ -42,13 +42,6 @@ A Version Control System (VCS) provides an automatic way to track changes in sof
 ---
 @transition[fade-in fade-out]
 
-## What is GitHub
-
-GitHub is a service that allows you to host Git Repositories online, accessible, and to collaborate with others on them.
-
----
-@transition[fade-in fade-out]
-
 ## How Git Works
 
 +++?image=template/images/git-flow.png
@@ -358,6 +351,13 @@ Note:
 
 ---?image=template/images/how-github-works.png
 @transition[fade-in fade-out]
+
++++
+@transition[fade-in fade-out]
+
+## What is GitHub
+
+GitHub is a service that allows you to host Git Repositories online, accessible, and to collaborate with others on them.
 
 ---
 @transition[fade-in fade-out]
