@@ -17,7 +17,7 @@ In a nutshell, versioning is a technique for mananing large/small projects by __
 +++
 @transition[zoom-in zoom-out]
 
-- [Git for Windows](https://git-scm.com/download/mac)
+- [Git for Windows](https://git-scm.com/download/win)
 - [Git for Mac](https://git-scm.com/download/mac)
 - [Git for Linux](https://git-scm.com/download/linux)
 
