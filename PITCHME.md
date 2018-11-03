@@ -1,5 +1,7 @@
 # Git Introduction
 
+![git logo](template/images/Git-Logo-2Color.png)
+
 ---
 @transition[fade-in fade-out]
 
