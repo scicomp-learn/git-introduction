@@ -1,1 +1,8 @@
 published       : false
+
+theme                   : template
+theme-background        : ["f8f8f7"]
+theme-headline          : ["Poppins", "#424242"]
+theme-byline            : ["Nunito Sans", "#424242"]
+theme-text              : ["Nunito Sans", "#424242"]
+
